@@ -3,7 +3,7 @@
 %global gh_user jc21
 
 Name:           cloudflare-ddns
-Version:        1.0.0
+Version:        1.0.1
 Release:        1%{?dist}
 Summary:        A command to detect your public IP and update a Cloudflare A/AAAA record when changed
 Group:          Applications/System
@@ -31,5 +31,8 @@ install -Dm0755 bin/%{name} %{buildroot}%{_bindir}/%{name}
 %{_bindir}/%{name}
 
 %changelog
+* Mon Jan 12 2026 Jamie Curnow <jc@jc21.com> 1.0.1-1
+- v1.0.1
+
 * Wed Jul 30 2025 Jamie Curnow <jc@jc21.com> 1.0.0-1
 - v1.0.0
